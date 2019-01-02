@@ -46,6 +46,11 @@
     color: white;
 }
 
+.header-box img {
+    height: 100%;
+    width: 100%;
+}
+
 .header-left ul {
     text-align: left;
     color: white !important;
@@ -66,6 +71,10 @@
 
 .header-left ul li ul li:nth-child(2) {
     display: inline-block;
+}
+
+.slider {
+    display: none;
 }
 
 .left-floater {
@@ -792,7 +801,7 @@
     top: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../images/audi.jpg');
+    background-image: url('../Content/astronomy.jpg');
 }
 
 .probootstrap_form_v1 {

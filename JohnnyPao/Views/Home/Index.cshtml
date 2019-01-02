@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="~/Content/slick-theme.css">
     <link rel="stylesheet" href="~/Content/helpers.css">
     <link rel="stylesheet" href="~/Content/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark probootstrap_navbar probootstrap_scrolled-light" id="probootstrap-navbar">
@@ -94,7 +95,7 @@
                     function contactHover() {
                         var button = document.getElementById("contactButton");
                         button.innerHTML = "<i style=\"margin-right: 10px;\" class=\"fa fa-user\"></i>Contact Me";
-                        button.onmouseleave = function() {
+                        button.onmouseleave = function () {
                             button.innerHTML = "Contact Me";
                         }
                     }
@@ -115,7 +116,24 @@
                 </p>
             </div>
             <div class="header-box">
-                
+                <img src="~/images/audi.jpg" class="slider w3-animate-fading" />
+                <img src="~/Content/taipei.jpg" class="slider w3-animate-fading" />
+                <script>
+                    var myIndex = 0;
+                    slideshow();
+
+                    function slideshow() {
+                        var i;
+                        var x = document.getElementsByClassName("slider");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        myIndex++;
+                        if (myIndex > x.length) { myIndex = 1 }
+                        x[myIndex - 1].style.display = "block";
+                        setTimeout(slideshow, 9000);    
+                    }
+                </script>
             </div>
         </div>
     </section>
