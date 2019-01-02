@@ -20,6 +20,24 @@
     background-repeat: no-repeat;
 }
 
+.header-title {
+    height: 100% !important;
+    position: relative;
+    top: 300px;
+}
+
+.left-floater {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.right-floater {
+    float: right;
+    width: 50%;
+    text-align: center;
+}
+
 .mouse-wrap, .scroll-wrap {
   position: absolute;
   bottom: 50px;
