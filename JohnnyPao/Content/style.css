@@ -20,22 +20,68 @@
     background-repeat: no-repeat;
 }
 
-.header-title {
-    height: 100% !important;
+.header-container {
+    height: 600px;
+    width: auto;
+    background: #000000b5;
     position: relative;
-    top: 300px;
+    top: 180px;
+    margin-left: 8%;
+    margin-right: 8%;
+    border-radius: 5px;
+}
+
+.header-left {
+    width: 50%;
+    float: left;
+    text-align: left;
+    line-height: 1.5rem !important;
+    padding: 10px 30px 0px 30px;
+}
+
+.header-box {
+    padding: 5%;
+    width: 50%;
+    float: right;
+    color: white;
+}
+
+.header-left ul {
+    text-align: left;
+    color: white !important;
+    line-height: 2.5rem !important;
+    padding: 0;
+}
+
+.header-left li {
+    display: block;
+}
+
+.header-left ul li ul li:first-child {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold !important;
+    width: 25%;
+}
+
+.header-left ul li ul li:nth-child(2) {
+    display: inline-block;
 }
 
 .left-floater {
     float: left;
     width: 50%;
-    text-align: center;
+    text-align: left;
+    min-height: 400px;
+    padding: 5%;
 }
 
 .right-floater {
     float: right;
     width: 50%;
     text-align: center;
+    min-height: 400px;
+    padding: 5%;
 }
 
 .mouse-wrap, .scroll-wrap {
