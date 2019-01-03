@@ -58,8 +58,8 @@
         <div class="header-container">
             <div class="header-left">
                 <h2 class="heading mb-2 probootstrap-animate">Johnny Pao</h2>
-                <h4 class="lead mb-5 probootstrap-animate" style="margin-bottom: 2rem !important;">Creating business solutions through technology</h4>
-                <ul class="probootstrap-animate" style="border-top: solid 1px; padding-top: 2rem; margin-bottom: 5%;">
+                <h2 class="lead mb-5 probootstrap-animate" style="margin-bottom: 2rem !important; font-size: 20px !important;">Creating business solutions through technology</h2>
+                <ul class="probootstrap-animate" style="border-top: solid 1px; padding-top: 2rem; margin-bottom: 5%; font-size: 16px">
                     <li>
                         <ul>
                             <li>Study</li>
@@ -91,29 +91,15 @@
                         </ul>
                     </li>
                 </ul>
-                <script>
-                    function contactHover() {
-                        var button = document.getElementById("contactButton");
-                        button.innerHTML = "<i style=\"margin-right: 10px;\" class=\"fa fa-user\"></i>Contact Me";
-                        button.onmouseleave = function () {
-                            button.innerHTML = "Contact Me";
-                        }
-                    }
-                    function portfolioHover() {
-                        var button = document.getElementById("portfolioButton");
-                        button.innerHTML = "<i style=\"margin-right: 10px;\" class=\"fa fa-briefcase\"></i>View My Portfolio";
-                        button.onmouseleave = function () {
-                            button.innerHTML = "View My Portfolio";
-                        }
-                    }
-                </script>
-                <p class="probootstrap-animate">
-                    <a href="onepage.html" onmouseover="contactHover()" id="contactButton" role="button" class="btn btn-outline-info p-3 mr-3 pl-5 pr-5 text-uppercase d-lg-inline d-md-inline d-sm-block d-block mb-3">Contact Me</a>
-                </p>
-                <br /><br />
-                <p class="probootstrap-animate">
-                    <a href="onepage.html" onmouseover="portfolioHover()" id="portfolioButton" role="button" class="btn btn-outline-info p-3 mr-3 pl-5 pr-5 text-uppercase d-lg-inline d-md-inline d-sm-block d-block mb-3">View My Portfolio</a>
-                </p>
+                <a href="onepage.html" id="portfolioButton" role="button" style="width: 250px;" class="probootstrap-animate btn btn-outline-info header-button text-uppercase d-block">
+                    <i id="icon2" style="margin-right: 10px;" class="fa fa-briefcase"></i>
+                    <span>View My Portfolio</span>
+                </a>
+                <br />
+                <a href="onepage.html" id="contactButton" role="button" style="width: 250px;" class="probootstrap-animate btn btn-outline-info header-button text-uppercase d-block">
+                    <i id="icon1" style="margin-right: 10px;" class="fa fa-user"></i>
+                    <span>Contact Me</span>
+                </a>
             </div>
             <div class="header-box">
                 <img src="~/images/audi.jpg" class="slider w3-animate-fading" />
